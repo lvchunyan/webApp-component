@@ -1,0 +1,45 @@
+<!--page/component/pages/swiper/swiper.wxml-->
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view>
+  <template is="head" data="{{title: 'swiper'}}"></template>
+  <view class='swiper'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="duration" vertical="{{vertical}}">
+      <block wx:for="{{background}}">
+        <swiper-item>
+          <view class='swiper-item-title' style="background-color:{{item.color}}">{{item.title}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='weui'>
+    <view class='weui-cell weui-cells'>
+      <view class='weui-cell-text'>
+        <text>指示点</text>
+      </view>
+      <switch checked='{{indicatorDots}}' bindchange='changeIndicatorDots'></switch>
+    </view>
+    <view class='weui-cell'>
+      <view class='weui-cell-text'>
+        <text>自动播放</text>
+      </view>
+      <switch checked='{{autoplay}}' bindchange='changeAutoplay'></switch>
+    </view>
+  </view>
+  <view class='page'>
+    <view class='page-section'>
+      <text>幻灯片切换时长(ms)</text>
+      <text class='page-section-text'>{{duration}}</text>
+    </view>
+    <slider bindchange="durationChange" value="{{duration}}" min="500" max="2000" />
+  </view>
+  <view class='page'>
+    <view class='page-section'>
+      <text>自动播放间隔时长(ms)</text>
+      <text class='page-section-text'>{{interval}}</text>
+    </view>
+    <slider bindchange="intervalChange" value="{{interval}}" min="2000" max="10000" />
+  </view>
+  <template is="foot" />
+</view>

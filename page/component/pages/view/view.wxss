@@ -1,0 +1,15 @@
+/* page/component/pages/view/view.wxss */
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+  align-items: center
+}
+
+.row-item {
+  width: 150rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  text-align: center
+}

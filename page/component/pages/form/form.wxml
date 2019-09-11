@@ -1,0 +1,8 @@
+<!--page/component/pages/form/form.wxml-->
+<import src="../../../common/head.wxml"/>
+<import src="../../../common/foot.wxml"/>
+
+<view>
+<template is="head" data="{{title: 'swiper'}}"></template>
+<template is="foot"/>
+</view>

@@ -1,0 +1,33 @@
+page {
+  background-color: #f8f8f8;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+
+.page-head {
+  text-align: center;
+  padding: 100rpx 0 30rpx 0;
+}
+
+.page-head-title {
+  font-size: 32rpx;
+  color: #bebebe;
+}
+
+.page-head-link {
+  width: 150rpx;
+  height: 2rpx;
+  background-color: #d8d8d8;
+  margin: 10rpx auto;
+}
+
+.page-foot {
+  text-align: center;
+  padding: 100rpx 0 30rpx 0;
+}
+
+.icon-foot {
+  width: 152rpx;
+  height: 23rpx;
+}

@@ -1,0 +1,30 @@
+<!--page/component/pages/scroll-view/scroll-view.wxml-->
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view>
+  <template is="head" data="{{title: 'scroll-view'}}"></template>
+  <view class='scroll-wrp'>
+    <view>
+      <text>Vertical Scroll\n纵向滚动</text>
+    </view>
+    <view>
+      <scroll-view scroll-y="true" style='height:300rpx'>
+        <block wx:for="{{row}}">
+          <view class='row-item' style="background-color:{{item.color}}">{{item.title}}</view>
+        </block>
+      </scroll-view>
+    </view>
+    <view>
+      <text>Horizontal Scroll\n横向滚动</text>
+    </view>
+    <view>
+      <scroll-view scroll-x="true" style='width:100%;height:300rpx;white-space:nowrap'>
+        <block wx:for="{{row}}">
+          <view class='Horizontal-item' style="background-color:{{item.color}}">{{item.title}}</view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+  <template is="foot" />
+</view>

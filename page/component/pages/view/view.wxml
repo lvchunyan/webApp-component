@@ -1,0 +1,28 @@
+<!--page/component/pages/view/view.wxml-->
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view>
+  <template is="head" data="{{title:'view'}}"></template>
+  <view>
+    <view>
+      <view>
+        <text>flex-direction: row\n横向布局</text>
+      </view>
+      <view class='row' style="flex-direction:row;">
+        <block wx:for="{{row}}">
+          <view class='row-item' style="background-color: {{item.color}}">{{item.title}}</view>
+        </block>
+      </view>
+       <view>
+        <text>flex-direction: column\n纵向布局</text>
+      </view>
+      <view class='row' style="flex-direction:column;">
+        <block wx:for="{{row}}">
+          <view class='row-item' style="background-color: {{item.color}}">{{item.title}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <template is="foot"></template>
+</view>
