@@ -34,12 +34,12 @@ Page({
       autoplay: !this.data.autoplay
     })
   },
-  durationChange:function(e){
+  durationChange: function(e) {
     this.setData({
-      duration:e.detail.value
+      duration: e.detail.value
     })
   },
-  intervalChange:function(e){
+  intervalChange: function(e) {
     this.setData({
       interval: e.detail.value
     })

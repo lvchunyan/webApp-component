@@ -1,1 +1,22 @@
 /* page/component/pages/icon/icon.wxss */
+
+.icon-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20rpx 80rpx;
+}
+
+.icon-box-img {
+  margin-right: 30rpx;
+}
+
+.icon-box-title {
+  font-size: 34rpx;
+}
+
+.icon-box-desc {
+  font-size: 26rpx;
+  color: #888;
+  padding-top: 10rpx;
+}

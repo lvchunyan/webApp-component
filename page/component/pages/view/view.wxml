@@ -14,7 +14,7 @@
           <view class='row-item' style="background-color: {{item.color}}">{{item.title}}</view>
         </block>
       </view>
-       <view>
+      <view>
         <text>flex-direction: column\n纵向布局</text>
       </view>
       <view class='row' style="flex-direction:column;">

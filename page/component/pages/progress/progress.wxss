@@ -1,1 +1,15 @@
 /* page/component/pages/progress/progress.wxss */
+
+.page{
+  margin: 20rpx 60rpx
+}
+.progress-box{
+  display: flex;
+  margin: 20rpx 0
+}
+progress{
+  width: 100%
+}
+.progress-cancel{
+  padding-left: 10rpx
+}

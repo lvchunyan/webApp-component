@@ -5,14 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    row: [
-      {
-        title:'A',
-        color:'#eee'
+    row: [{
+        title: 'A',
+        color: '#eee'
       },
       {
         title: 'B',
-        color:'#1AAD19'
+        color: '#1AAD19'
       },
       {
         title: 'C',
