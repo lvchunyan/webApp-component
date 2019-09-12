@@ -1,8 +1,36 @@
 <!--page/component/pages/checkbox/checkbox.wxml-->
-<import src="../../../common/head.wxml"/>
-<import src="../../../common/foot.wxml"/>
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
 
 <view>
-<template is="head" data="{{title: 'swiper'}}"></template>
-<template is="foot"/>
+  <template is="head" data="{{title: 'checkbox'}}"></template>
+  <view>
+    <view>
+      <view>
+        <text>默认样式</text>
+      </view>
+      <view>
+        <label>
+          <checkbox value='cb' checked='true'>选中</checkbox>
+        </label>
+        <label>
+          <checkbox value='cb'>未选中</checkbox>
+        </label>
+      </view>
+    </view>
+    <view>
+      <view>
+        <text>推荐展示样式</text>
+      </view>
+      <view>
+        <checkbox-group bindchange="checkboxChange">
+          <label wx:for="{{checkboxList}}" class='checkbox-wrp'>
+            <checkbox value="{{item.value}}" checked="{{item.checked}}"></checkbox>
+            <view>{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>
+  <template is="foot" />
 </view>

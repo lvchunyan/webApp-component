@@ -3,6 +3,6 @@
 <import src="../../../common/foot.wxml"/>
 
 <view>
-<template is="head" data="{{title: 'swiper'}}"></template>
+<template is="head" data="{{title: 'picker'}}"></template>
 <template is="foot"/>
 </view>

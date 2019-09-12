@@ -1,8 +1,38 @@
 <!--page/component/pages/label/label.wxml-->
-<import src="../../../common/head.wxml"/>
-<import src="../../../common/foot.wxml"/>
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
 
 <view>
-<template is="head" data="{{title: 'swiper'}}"></template>
-<template is="foot"/>
+  <template is="head" data="{{title: 'label'}}"></template>
+  <view class='label'>
+    <view class="label-title">表单组件在label内</view>
+    <checkbox-group>
+      <view class='label-checkbox' wx:for="{{checkboxItems}}">
+        <label>
+          <checkbox value='{{item.name}}' checked='{{item.checked}}'></checkbox>
+          <text>{{item.value}}</text>
+        </label>
+      </view>
+    </checkbox-group>
+  </view>
+  <view class='label'>
+    <view class="label-title">label用for标识表单组件</view>
+    <radio-group>
+      <view class='label-checkbox' wx:for="{{radioItems}}">
+        <radio value='{{item.name}}' checked='{{item.checked}}'></radio>
+        <label for="{{item.name}}">
+          <text>{{item.name}}</text>
+        </label>
+      </view>
+    </radio-group>
+  </view>
+  <view class='label'>
+    <view class="label-title">label内有多个时选中第一个</view>
+    <label>
+      <checkbox>选项一</checkbox>
+      <checkbox>选项二</checkbox>
+      <view>点击该label下的文字默认选中第一个checkbox</view>
+    </label>
+  </view>
+  <template is="foot" />
 </view>

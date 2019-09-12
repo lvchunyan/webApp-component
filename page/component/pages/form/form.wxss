@@ -1,1 +1,16 @@
 /* page/component/pages/form/form.wxss */
+
+.page-section {
+  margin: 20rpx 80rpx;
+}
+
+.weui-input {
+  border-top: 1rpx solid #999;
+  border-bottom: 1rpx solid #999;
+  padding: 20rpx 0;
+  background-color: #fff;
+}
+
+button {
+  margin: 40rpx 0;
+}

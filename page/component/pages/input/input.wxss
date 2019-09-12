@@ -1,1 +1,18 @@
 /* page/component/pages/input/input.wxss */
+
+.weui-title {
+  font-size: 26rpx;
+  color: #999;
+  margin: 10rpx 30rpx;
+}
+
+.weui-input {
+  border-top: 1px solid rgb(207, 204, 204);
+  border-bottom: 1px solid rgb(207, 204, 204);
+  background-color: #fff;
+}
+
+input {
+  height: 2.3rem;
+  padding: 0 30rpx;
+}

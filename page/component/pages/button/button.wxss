@@ -1,1 +1,9 @@
 /* page/component/pages/button/button.wxss */
+
+.button-body {
+  margin: 20rpx 30rpx;
+}
+
+button {
+  margin: 40rpx;
+}

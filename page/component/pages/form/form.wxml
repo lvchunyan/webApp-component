@@ -1,8 +1,44 @@
 <!--page/component/pages/form/form.wxml-->
-<import src="../../../common/head.wxml"/>
-<import src="../../../common/foot.wxml"/>
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
 
 <view>
-<template is="head" data="{{title: 'swiper'}}"></template>
-<template is="foot"/>
+  <template is="head" data="{{title: 'form'}}"></template>
+  <view>
+    <view class='page-body'>
+      <form bindsubmit='formSubmit' bindreset='formReset'>
+        <view class='page-section'>
+          <view>switch</view>
+          <switch name="switch"></switch>
+        </view>
+        <view class='page-section'>
+          <view>radio</view>
+          <radio-group name="radio">
+            <radio value="radio1"></radio>选项1
+            <radio value='radio2'></radio>选项2
+          </radio-group>
+        </view>
+        <view class='page-section'>
+          <view>checkbox</view>
+          <checkbox-group name="checkbox">
+            <checkbox value="checkbox1"></checkbox>选项1
+            <checkbox value='checkbox2'></checkbox>选项2
+          </checkbox-group>
+        </view>
+        <view class='page-section'>
+          <view>slider</view>
+          <slider value='50' show-value name="slider"></slider>
+        </view>
+        <view>
+          <view class='page-section'>input</view>
+          <input class='weui-input' name="input" placeholder="这是一个输入框"></input>
+        </view>
+        <view class="page-section">
+          <button type="primary" formType="submit">Submit</button>
+          <button formType="reset">Reset</button>
+        </view>
+      </form>
+    </view>
+  </view>
+  <template is="foot" />
 </view>

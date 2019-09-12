@@ -1,1 +1,14 @@
 /* page/component/pages/checkbox/checkbox.wxss */
+
+.checkbox-wrp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+checkbox {
+  margin: 10rpx 10rpx 10rpx 20rpx;
+}
