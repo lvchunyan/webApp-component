@@ -1,1 +1,16 @@
 /* page/component/pages/picker/picker.wxss */
+
+.page-body{
+  width: 100%
+}
+.page-body-title{
+  padding: 10rpx 20rpx;
+  color: #999;
+}
+.page-body-item{
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 20rpx;
+  background-color: #fff;
+  font-size: 38rpx
+}

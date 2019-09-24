@@ -1,1 +1,4 @@
 /* page/component/pages/audio/audio.wxss */
+button{
+  margin: 20rpx
+}

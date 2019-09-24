@@ -1,8 +1,17 @@
 <!--page/component/pages/audio/audio.wxml-->
-<import src="../../../common/head.wxml"/>
-<import src="../../../common/foot.wxml"/>
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
 
 <view>
-<template is="head" data="{{title: 'swiper'}}"></template>
-<template is="foot"/>
+  <template is="head" data="{{title: 'audio'}}"></template>
+  <view>
+    <view>
+    <audio id="myAudio" src="{{current.src}}" poster="{{current.poster}}" name="{{current.name}}" author="{{current.author}}" controls></audio>
+    </view>
+    <button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button>
+  </view>
+  <template is="foot" />
 </view>

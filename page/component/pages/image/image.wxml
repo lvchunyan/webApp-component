@@ -1,8 +1,16 @@
 <!--page/component/pages/image/image.wxml-->
-<import src="../../../common/head.wxml"/>
-<import src="../../../common/foot.wxml"/>
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
 
 <view>
-<template is="head" data="{{title: 'swiper'}}"></template>
-<template is="foot"/>
+  <template is="head" data="{{title: 'image'}}"></template>
+  <view>
+    <view>
+      <image class="image" src="../../resources/pic/1.jpg" />
+    </view>
+    <view>
+      <image class="image" src="../../resources/pic/2.jpg" />
+    </view>
+  </view>
+  <template is="foot" />
 </view>

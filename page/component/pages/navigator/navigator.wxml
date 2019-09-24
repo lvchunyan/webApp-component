@@ -1,2 +1,19 @@
 <!--page/component/pages/navigator/navigator.wxml-->
-<text>page/component/pages/navigator/navigator.wxml</text>
+
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<template is="head" data="{{title:'navigator'}}" />
+<view class='page-body'>
+<view>
+  <navigator url="navigate?title=navigate">
+    <button>跳转到新页面</button>
+  </navigator>
+</view>
+<view>
+  <navigator url="redirect?title=redirect" redirect>
+    <button>在当前页面打开</button>
+  </navigator>
+</view>
+</view>
+<template is="foot"/>
